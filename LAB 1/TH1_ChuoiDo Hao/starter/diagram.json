@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "CE339 - Lab TH1",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "imu1", "top": -120, "left": 200, "attrs": { "accelX": "0", "accelY": "0", "accelZ": "1" } },
+    { "type": "wokwi-ntc-temperature-sensor", "id": "ntc1", "top": 180, "left": -230, "attrs": { "temperature": "24", "beta": "3950" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "imu1:VCC", "esp:3V3", "red", [] ],
+    [ "imu1:GND", "esp:GND.2", "black", [] ],
+    [ "imu1:SDA", "esp:21", "green", [] ],
+    [ "imu1:SCL", "esp:22", "blue", [] ],
+    [ "ntc1:VCC", "esp:3V3", "red", [] ],
+    [ "ntc1:GND", "esp:GND.1", "black", [] ],
+    [ "ntc1:OUT", "esp:34", "orange", [] ]
+  ],
+  "dependencies": {}
+}
