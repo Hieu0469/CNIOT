@@ -1,7 +1,7 @@
 # MSSV=23520469 d=9 c=6 THI_NGHIEM=2 CHE_DO=C TAI_NEN=1 KHOA=1 reset_reason=1
 # T0_US=1000 TX_US=550 TB_US=1500 PB_MS=100 CL_MS=37 CM_MS=75 WDT_TIMEOUT_MS=1500
 # burn_us(10000) do duoc 13308 us (iter/us=1.52)
-# KHOA=mutex  CL=37 ms  CM=75 ms  (moc 0 = luc L bat dau)
+# TEN_KHOA=mutex  CL=37 ms  CM=75 ms  (moc 0 = luc L bat dau)
 su_kien,t_ms
 L_bat_dau,0.00
 L_lay_khoa,0.01
